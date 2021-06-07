@@ -280,7 +280,7 @@ footer .footer_discl {
 
 .match_block .match_wrapper .match_top .left div,
 .match_block .match_wrapper .match_bottom .left div {
-    float:left
+    text-align:left;
 }
 
 .match_block .match_wrapper .match_top .left .icon,
@@ -318,7 +318,7 @@ footer .footer_discl {
 .match_box_big .block_wraper {
     display: inline-block;
     margin-right: 50px;
-    float: left;
+    text-align: left;
 }
 
 .match_box_big .block {
@@ -406,13 +406,13 @@ footer .footer_discl {
 
 .home_meetplayers .home_card_wrapper {
     position: relative;
-    float: left;
+    text-align: left;
     width: 630px;
     min-height: 600px;
 }
 
 .home_meetplayers .home_text_wrapper {
-    float: right;
+    text-align: right;
     width: 390px;
 }
 
