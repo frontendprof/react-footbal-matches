@@ -7,6 +7,8 @@ import {useFormik} from "formik";
 import * as Yup from "yup";
 
 import {firebase} from "../firebase"
+import { showToastError,showToastSuccess } from "../utils/tools"
+
 
 
 
@@ -16,8 +18,8 @@ const Signin = (props) => {
 
     const formik=useFormik({
         initialValues:{
-            email:"",
-            password:""
+            email:"abdumalik@billz.co",
+            password:"Testing123"
         },
         validationSchema:Yup.object({
             email:Yup.string().email("Invalid email address").required("The email is required"),
@@ -35,10 +37,11 @@ const Signin = (props) => {
             values.email,
             values.password
         ).then(()=>{
+            showToastSuccess("Welcome back!!!")
             props.history.push("/dashboard")
-        }).catch(()=>{
+        }).catch((error)=>{
             setLoading(false)
-            alert("error")
+            showToastError(error.message)
         })
     }
 

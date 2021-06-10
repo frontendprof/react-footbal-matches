@@ -2,6 +2,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+import { toast } from 'react-toastify';
+
+
 import mCityLogo from "../Resources/images/logos/manchester_city_logo.png";
 
 export const CityLogo=(props)=>{
@@ -20,4 +23,16 @@ export const CityLogo=(props)=>{
     }else{
         return templates;
     }
+}
+
+export const showToastError=(msg)=>{
+    toast.error(msg,{
+        position:toast.POSITION.TOP_CENTER
+    })
+}
+
+export const showToastSuccess=(msg)=>{
+    toast.success(msg,{
+        position:toast.POSITION.TOP_CENTER
+    })
 }
