@@ -18,7 +18,11 @@
 2. Header component
 3. Footer component
 4. Signin component
+5. Admin component
+   5.1. Dashboard component
+   5.2. AdminNav component
 
 ### HOC
 
 1. Auth.js
+2. AdminLayout.js
