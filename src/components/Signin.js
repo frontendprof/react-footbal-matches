@@ -6,9 +6,11 @@ import {Redirect} from 'react-router-dom';
 import {useFormik} from "formik";
 import * as Yup from "yup";
 
+import {firebase} from "../firebase"
 
 
-const Signin = () => {
+
+const Signin = (props) => {
 
     const [loading,setLoading]=useState(false)
 
@@ -23,9 +25,22 @@ const Signin = () => {
         }),
         onSubmit:(values)=>{
             setLoading(true)
-            console.log(values);
+            submitForm(values)
         }
     })
+
+    const submitForm=(values)=>{
+        firebase.auth()
+        .signInWithEmailAndPassword(
+            values.email,
+            values.password
+        ).then(()=>{
+            props.history.push("/dashboard")
+        }).catch(()=>{
+            setLoading(false)
+            alert("error")
+        })
+    }
 
 
 
