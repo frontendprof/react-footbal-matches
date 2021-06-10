@@ -10,7 +10,7 @@
 ### utils
 
 1. tools
-2. assets
+2. resources
 
 ### Components
 
@@ -18,3 +18,7 @@
 2. Header component
 3. Footer component
 4. Signin component
+
+### HOC
+
+1. Auth.js
