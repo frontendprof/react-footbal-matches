@@ -14,13 +14,16 @@
 
 ### Components
 
-1. Home component
+1. Router(App) component
 2. Header component
 3. Footer component
 4. Signin component
 5. Admin component
    5.1. Dashboard component
    5.2. AdminNav component
+6. Home component
+   6.1 Featured component
+   6.2 Stripes component
 
 ### HOC
 

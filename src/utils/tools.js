@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import {firebase} from "../firebase"
 
 
-import mCityLogo from "../Resources/images/logos/manchester_city_logo.png";
+import mCityLogo from "../resources/images/logos/manchester_city_logo.png";
 
 export const CityLogo=(props)=>{
     const templates=<div className="img_cover"
